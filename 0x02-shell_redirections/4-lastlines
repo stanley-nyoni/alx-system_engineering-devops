@@ -1,3 +1,2 @@
 #!/bin/bash
-B
 tail -n 10 /etc/passwd
