@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Prints content in cuurent directory
+
+for file in *; do
+	if [[ $file != .* ]]; then
+		name_after_dash="${file#*-}"
+		echo "$name_after_dash"
+	fi
+done
