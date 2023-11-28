@@ -1,0 +1,7 @@
+# ~/.ssh/config
+
+Host StanALX
+    HostName 54.160.121.199
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
