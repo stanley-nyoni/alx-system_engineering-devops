@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# Script that uses ssh to connect to a server
-
-# server="54.160.121.199"
-# private_key="~/.ssh/school"
-# username="ubuntu"
-
-ssh -i ~/.ssh/school ubuntu@54.160.121.199
