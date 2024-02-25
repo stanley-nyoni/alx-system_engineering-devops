@@ -1,0 +1,5 @@
+Host StanServer
+    Hostname 100.25.13.217
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
