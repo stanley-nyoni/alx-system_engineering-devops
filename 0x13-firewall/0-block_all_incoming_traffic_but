@@ -1,0 +1,31 @@
+# Install and Configure UFW firewall
+
+# Update the packages
+echo -e "Updating the packages\n"
+sudo apt-get update
+
+# Installing UFW
+echo -e "\nInstalling the UFW package\n"
+sudo apt-get install -y ufw
+
+# Configuring UFW
+echo -e "\nConfiguring UFW\n"
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+# Allowing Ports
+echo -e "\nAllowing Port 22 - SSH\n"
+sudo ufw allow 22/tcp
+
+echo -e "\nAllowing Port 443 - HTTPS SSL\n"
+sudo ufw allow 443/tcp
+
+echo -e "\nAllowing Port 80 - HTTP\n"
+sudo ufw allow 80/tcp
+
+# Enable UFW
+sudo ufw enable
+
+# Check status
+sudo ufw status verbose
+
