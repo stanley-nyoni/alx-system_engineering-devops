@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-'''
-    this module contains the function number_of_subscribers
-'''
+''' 0-subs.py '''
 import requests
 from sys import argv
 
 
 def number_of_subscribers(subreddit):
     '''
-        returns the number of subscribers for a given subreddit
+        returns the number of subscribers
     '''
-    user = {'User-Agent': 'Lizzie'}
+    user = {'User-Agent': 'Max'}
     url = requests.get('https://www.reddit.com/r/{}/about.json'
                        .format(subreddit), headers=user).json()
     try:
